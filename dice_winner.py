@@ -25,6 +25,8 @@ def winner(player_number,game_round):
             print(f"{result}")
             score[j] = score[j] + result
 
+    with open("score.txt","a") as file:
+        file.write(f"{names},{score}")
     print(score)
 
     winner_index = 0
