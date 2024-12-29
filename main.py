@@ -1,6 +1,7 @@
-#multiplayer game
-#ask how many player are playing?
-from dice_winner import winner
+#ask for inputs: number of players, game round
+#calls another function with these input for rest of the game
+
+from module1_winner import winner
 
 while True:
     try:
@@ -19,8 +20,4 @@ while True:
         continue
 
 winner(number_of_player,game_round)
-
-#ask name?
-#roll a dice for each and keep adding the score for 10 rounds?
-#player with highest sum will win
 
