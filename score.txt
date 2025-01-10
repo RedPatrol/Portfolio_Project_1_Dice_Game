@@ -1,1 +1,1 @@
-['sujan', 'ushma', 'maya'],[5, 10, 8]
+['ushma', 'sujan'],[7, 8]['sujan', 'ushma', 'dev', 'maya'],[5, 7, 6, 5]
