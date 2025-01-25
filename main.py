@@ -3,7 +3,7 @@
 
 #module1_winner is file name, winner is function in that file
 from module1_winner import winner
-
+player_names = []
 
 #validate input - player number
 while True:
@@ -27,7 +27,19 @@ while True:
         print("Error! Enter valid input")
         continue
 
+    
+        
+#create lists of players
+for i in range(number_of_player):
+    name = input(f"Enter player {i+1} name: ")
+    player_names.append(name)
+     
+
+
+
+
+
 #call function
-winner,score = winner(number_of_player,game_round)
+winner,score = winner(player_names,game_round)
 print(f"{winner.upper()} is the winner with score {score}.")
 
