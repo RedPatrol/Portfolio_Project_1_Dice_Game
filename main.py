@@ -26,19 +26,12 @@ while True:
     except ValueError:
         print("Error! Enter valid input")
         continue
-
-    
-        
+      
 #create lists of players
 for i in range(number_of_player):
     name = input(f"Enter player {i+1} name: ")
     player_names.append(name)
      
-
-
-
-
-
 #call function
 winner,score = winner(player_names,game_round)
 print(f"{winner.upper()} is the winner with score {score}.")
